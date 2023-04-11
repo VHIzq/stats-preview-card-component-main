@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stats preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="stats">
+        <article class="stats__img">
+          <picture >
+            <source
+              srcset='/images/image-header-desktop.jpg'
+              media='(min-width: 900px)'
+            >
+            <img src="/images/image-header-mobile.jpg" alt="hero image">
+            <div class="mask"></div>
+          </picture>
+        </article>
+        <article class="stats__text">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenew, customer experience, and overall efficiency.
+          </p>
+          <div class="flex-group">
+            <div class="stats__details">10k+<span>companies</span></div>
+            <div class="stats__details">314<span>templates</span></div>
+            <div class="stats__details">12M+<span>queries</span></div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
