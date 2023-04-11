@@ -25,17 +25,29 @@ body{
   .stats{
     flex-direction: row-reverse;
     max-width: 1400px;
+    height: 500px;
   }
-  
-
+  .stats__text{
+    width: 50%;
+  }
+  .stats__img{
+    width: 50%;
+  }
+  .stats__text p{
+    text-align: left;
+  }
 }
 
 .stats__img{
   position: relative;
+  min-height: 400px;
 }
 
-.stats__img img{
-  width: 100%;
+.hero{
+  background-image: url(/images/image-header-mobile.jpg);
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .mask{
@@ -56,6 +68,13 @@ body{
   gap: 2rem;
 }
 
+@media (min-width:900px) {
+  .stats__text{
+    justify-content: center;
+    padding: 2rem;
+  }
+}
+
 .stats__text h1{
   color: var(--clr-neutral-200);
   font-size: 1.8rem;
@@ -74,6 +93,13 @@ body{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+@media (min-width:900px) {
+  .flex-group{
+    flex-direction: row;
+    align-self: center;
+  }
 }
 
 .stats__details{
