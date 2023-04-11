@@ -40,14 +40,25 @@ body{
 
 .stats__img{
   position: relative;
-  min-height: 400px;
+  height: 500px;
 }
 
 .hero{
-  background-image: url(/images/image-header-mobile.jpg);
-  height: auto;
+  height: inherit;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media(max-width: 900px) {
+  .hero{
+    background-image: url(/images/image-header-mobile.jpg);
+  }
+}
+
+@media(min-width:901px) {
+  .hero{
+    background-image: url(/images/image-header-desktop.jpg);
+  }
 }
 
 .mask{
